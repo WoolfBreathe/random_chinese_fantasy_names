@@ -1,0 +1,6 @@
+var bookPrefix = {
+  "epic": ["全", "总"],
+  "legendary": ["真", "秘"],
+  "mythic": ["宝", "玄"],
+  "exotic": ["仙", "魔"]
+}
