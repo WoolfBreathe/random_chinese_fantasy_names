@@ -37,28 +37,63 @@
         <div class="row">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="design-tab" data-bs-toggle="tab" data-bs-target="#tab-pane-1"
-                type="button" role="tab" aria-controls="tab-pane-1" aria-selected="true">人名</button>
+              <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab-pane-1" type="button"
+                role="tab" aria-controls="tab-pane-1" aria-selected="false">人名</button>
             </li>
 
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="marketing-tab" data-bs-toggle="tab" data-bs-target="#marketing-tab-pane"
-                type="button" role="tab" aria-controls="marketing-tab-pane" aria-selected="false">法号</button>
+              <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab-pane-2" type="button"
+                role="tab" aria-controls="tab-pane-2" aria-selected="false">法号</button>
             </li>
 
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="finance-tab" data-bs-toggle="tab" data-bs-target="#finance-tab-pane"
-                type="button" role="tab" aria-controls="finance-tab-pane" aria-selected="false">Finance</button>
+              <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab-pane-3" type="button"
+                role="tab" aria-controls="tab-pane-3" aria-selected="false">功法</button>
             </li>
 
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="music-tab" data-bs-toggle="tab" data-bs-target="#music-tab-pane"
-                type="button" role="tab" aria-controls="music-tab-pane" aria-selected="false">Music</button>
+              <button class="nav-link" id="tab-4" data-bs-toggle="tab" data-bs-target="#tab-pane-4" type="button"
+                role="tab" aria-controls="tab-pane-4" aria-selected="false">秘籍</button>
             </li>
 
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="education-tab" data-bs-toggle="tab" data-bs-target="#education-tab-pane"
-                type="button" role="tab" aria-controls="education-tab-pane" aria-selected="false">Education</button>
+              <button class="nav-link" id="tab-5" data-bs-toggle="tab" data-bs-target="#tab-pane-5" type="button"
+                role="tab" aria-controls="tab-pane-5" aria-selected="false">生灵</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-6" data-bs-toggle="tab" data-bs-target="#tab-pane-6" type="button"
+                role="tab" aria-controls="tab-pane-6" aria-selected="false">材料</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-7" data-bs-toggle="tab" data-bs-target="#tab-pane-7" type="button"
+                role="tab" aria-controls="tab-pane-7" aria-selected="false">丹药</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-8" data-bs-toggle="tab" data-bs-target="#tab-pane-8" type="button"
+                role="tab" aria-controls="tab-pane-8" aria-selected="false">法宝</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-9" data-bs-toggle="tab" data-bs-target="#tab-pane-9" type="button"
+                role="tab" aria-controls="tab-pane-9" aria-selected="false">门派</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-10" data-bs-toggle="tab" data-bs-target="#tab-pane-10"
+                type="button" role="tab" aria-controls="tab-pane-10" aria-selected="false">国家</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-11" data-bs-toggle="tab" data-bs-target="#tab-pane-11" type="button"
+                role="tab" aria-controls="tab-pane-11" aria-selected="false">据点</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="tab-12" data-bs-toggle="tab" data-bs-target="#tab-pane-12" type="button"
+                role="tab" aria-controls="tab-pane-12" aria-selected="false">地域</button>
             </li>
           </ul>
         </div>
@@ -68,29 +103,28 @@
         <div class="row">
           <div class="col-12">
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="tab-pane-1" role="tabpanel" aria-labelledby="design-tab"
-                tabindex="0">
+              <div class="tab-pane fade show active" id="tab-pane-1" role="tabpanel" aria-labelledby="tab-1" tabindex="0">
                 <div class="row">
                   <div class="input-group mb-4 col">
                     <button class="btn btn-secondary" type="button" disabled aria-expanded="false">性别</button>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>随机</option>
-                      <option value="true">男</option>
-                      <option value="false">女</option>
+                    <select class="form-select" id="tab-pane-1-isFemale">
+                      <option selected value=''>随机</option>
+                      <option value=false>男</option>
+                      <option value=true>女</option>
                     </select>
 
                     <button class="btn btn-secondary" type="button" disabled aria-expanded="false">样式</button>
-                    <select class="form-select" id="inputGroupSelect01">
-                      <option selected>随机</option>
-                      <option value="3">一个实字</option>
-                      <option value="6">两个实字</option>
-                      <option value="6">虚字 + 实字</option>
+                    <select class="form-select" id="tab-pane-1-style">
+                      <option selected value=''>随机</option>
+                      <option value="single">一个实字</option>
+                      <option value="double">两个实字</option>
+                      <option value="combine">虚字 + 实字</option>
                     </select>
 
                     <button class="btn btn-outline-secondary" type="button" disabled aria-expanded="false">姓氏</button>
-                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                    <input type="text" class="form-control" id="tab-pane-1-familyName" aria-label="Server">
                     <button class="btn btn-outline-secondary" type="button" disabled aria-expanded="false">字辈</button>
-                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                    <input type="text" class="form-control" id="tab-pane-1-middleCharacter" aria-label="Server">
                   </div>
                   <div class="col-auto mb-4 col">
                     <button type="button" class="btn btn-secondary" onclick="buttonGetName()">生成</button>
@@ -101,241 +135,711 @@
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel" aria-labelledby="marketing-tab"
-                tabindex="0">
+              <div class="tab-pane fade" id="tab-pane-2" role="tabpanel" aria-labelledby="tab-2" tabindex="0">
                 <div class="row">
-                  <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-3">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Advertising</h5>
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">性别</button>
+                    <select class="form-select" id="tab-pane-2-isFemale">
+                      <option selected value=''>随机</option>
+                      <option value=false>男</option>
+                      <option value=true>女</option>
+                    </select>
 
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">称号</button>
+                    <select class="form-select" id="tab-pane-2-title">
+                      <option selected value=''>随机</option>
+                      <option>子</option>
+                      <option>道人</option>
+                      <option>真人</option>
+                      <option>法师</option>
+                      <option>教主</option>
+                      <option>真君</option>
+                      <option>仙</option>
+                      <option>仙人</option>
+                      <option>仙师</option>
+                      <option>仙翁</option>
+                      <option>天尊</option>
+                      <option>道姑</option>
+                      <option>公主</option>
+                      <option>洞主</option>
+                      <option>教母</option>
+                      <option>圣女</option>
+                      <option>仙子</option>
+                      <option>仙女</option>
+                      <option>圣母</option>
+                      <option>娘娘</option>
+                    </select>
 
-                          <span class="badge bg-advertising rounded-pill ms-auto">30</span>
-                        </div>
-
-                        <img src="images/topics/undraw_online_ad_re_ol62.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                    <button class="btn btn-outline-secondary" type="button" disabled aria-expanded="false">字辈</button>
+                    <input type="text" class="form-control" id="tab-pane-2-firstCharacter" aria-label="Server">
                   </div>
-
-                  <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-3">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Video Content</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-advertising rounded-pill ms-auto">65</span>
-                        </div>
-
-                        <img src="images/topics/undraw_Group_video_re_btu7.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetDao()">生成</button>
                   </div>
+                </div>
 
-                  <div class="col-lg-2 col-md-6 col-12">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Viral Tweet</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-advertising rounded-pill ms-auto">50</span>
-                        </div>
-
-                        <img src="images/topics/undraw_viral_tweet_gndb.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
-                  </div>
+                <div class="row" id="tab-pane-content-2">
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel" aria-labelledby="finance-tab"
-                tabindex="0">
+              <div class="tab-pane fade" id="tab-pane-3" role="tabpanel" aria-labelledby="tab-3" tabindex="0">
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0 lh-lg">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Investment</h5>
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">长度</button>
+                    <select class="form-select" id="tab-pane-2-length">
+                      <option selected value=''>随机</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
 
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-2-kind">
+                      <option selected value=''>随机</option>
+                      <option>劲</option>
+                      <option>气</option>
+                      <option>气功</option>
+                      <option>内功</option>
+                      <option>玄功</option>
+                      <option>吐纳术</option>
+                      <option>导引术</option>
+                      <option>轻身术</option>
+                      <option>御剑术</option>
+                      <option>御风术</option>
+                      <option>轻功</option>
+                      <option>遁术</option>
+                      <option>擒拿手</option>
+                      <option>神行法</option>
+                      <option>纵跃功</option>
+                      <option>步法</option>
+                      <option>身法</option>
+                      <option>拳</option>
+                      <option>掌</option>
+                      <option>指</option>
+                      <option>爪</option>
+                      <option>手</option>
+                      <option>腿</option>
+                      <option>步</option>
+                      <option>刀</option>
+                      <option>剑</option>
+                      <option>枪</option>
+                      <option>棍</option>
+                      <option>心法</option>
+                      <option>心诀</option>
+                      <option>神术</option>
+                      <option>神法</option>
+                      <option>神功</option>
+                      <option>功</option>
+                      <option>诀</option>
+                      <option>神通</option>
+                      <option>绝技</option>
+                    </select>
 
-                          <span class="badge bg-finance rounded-pill ms-auto">30</span>
-                        </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">前缀</button>
+                    <select class="form-select" id="tab-pane-2-prefix">
+                      <option selected value=''>随机</option>
+                      <option>大</option>
+                      <option>小</option>
+                    </select>
 
-                        <img src="images/topics/undraw_Finance_re_gnv2.png" class="custom-block-image img-fluid" alt="">
-                      </a>
-                    </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">后缀</button>
+                    <select class="form-select" id="tab-pane-2-numfix">
+                      <option selected value=''>随机</option>
+                      <option>三</option>
+                      <option>四</option>
+                      <option>五</option>
+                      <option>六</option>
+                      <option>七</option>
+                      <option>八</option>
+                      <option>九</option>
+                      <option>十</option>
+                      <option>十一</option>
+                      <option>十二</option>
+                      <option>十五</option>
+                      <option>十八</option>
+                      <option>二十四</option>
+                      <option>三十六</option>
+                      <option>四十八</option>
+                      <option>六十四</option>
+                      <option>七十二</option>
+                      <option>八十一</option>
+                      <option>一百零八</option>
+                    </select>
                   </div>
-
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <div class="custom-block custom-block-overlay">
-                      <div class="d-flex flex-column h-100">
-                        <img
-                          src="images/businesswoman-using-tablet-analysis-graph-company-finance-strategy-statistics-success-concept-planning-future-office-room.jpg"
-                          class="custom-block-image img-fluid" alt="">
-
-                        <div class="custom-block-overlay-text d-flex">
-                          <div>
-                            <h5 class="text-white mb-2">Finance</h5>
-
-                            <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint animi
-                              necessitatibus aperiam repudiandae nam omnis</p>
-
-                            <a href="topics-detail.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
-                          </div>
-
-                          <span class="badge bg-finance rounded-pill ms-auto">25</span>
-                        </div>
-
-                        <div class="social-share d-flex">
-                          <p class="text-white me-4">Share:</p>
-
-                          <ul class="social-icon">
-                            <li class="social-icon-item">
-                              <a href="#" class="social-icon-link bi-twitter"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                              <a href="#" class="social-icon-link bi-facebook"></a>
-                            </li>
-
-                            <li class="social-icon-item">
-                              <a href="#" class="social-icon-link bi-pinterest"></a>
-                            </li>
-                          </ul>
-
-                          <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
-                        </div>
-
-                        <div class="section-overlay"></div>
-                      </div>
-                    </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetSkill()">生成</button>
                   </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-3">
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab" tabindex="0">
+              <div class="tab-pane fade" id="tab-pane-4" role="tabpanel" aria-labelledby="tab-4" tabindex="0">
                 <div class="row">
-                  <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-3">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Composing Song</h5>
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">长度</button>
+                    <select class="form-select" id="tab-pane-4-length">
+                      <option selected value=''>随机</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
 
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">主类别</button>
+                    <select class="form-select" id="tab-pane-4-mainkind">
+                      <option selected value=''>随机</option>
+                      <option>劲</option>
+                      <option>气</option>
+                      <option>气功</option>
+                      <option>内功</option>
+                      <option>玄功</option>
+                      <option>吐纳术</option>
+                      <option>导引术</option>
+                      <option>轻身术</option>
+                      <option>御剑术</option>
+                      <option>御风术</option>
+                      <option>轻功</option>
+                      <option>遁术</option>
+                      <option>擒拿手</option>
+                      <option>神行法</option>
+                      <option>纵跃功</option>
+                      <option>步法</option>
+                      <option>身法</option>
+                      <option>拳</option>
+                      <option>掌</option>
+                      <option>指</option>
+                      <option>爪</option>
+                      <option>手</option>
+                      <option>腿</option>
+                      <option>步</option>
+                      <option>刀</option>
+                      <option>剑</option>
+                      <option>枪</option>
+                      <option>棍</option>
+                      <option>心法</option>
+                      <option>心诀</option>
+                      <option>神术</option>
+                      <option>神法</option>
+                      <option>神功</option>
+                      <option>功</option>
+                      <option>诀</option>
+                      <option>神通</option>
+                      <option>绝技</option>
+                    </select>
 
-                          <span class="badge bg-music rounded-pill ms-auto">45</span>
-                        </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">副类别</button>
+                    <select class="form-select" id="tab-pane-4-postkind">
+                      <option selected value=''>随机</option>
+                      <option>图</option>
+                      <option>经</option>
+                      <option>典</option>
+                      <option>籍</option>
+                      <option>篆</option>
+                    </select>
 
-                        <img src="images/topics/undraw_Compose_music_re_wpiw.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">前缀</button>
+                    <select class="form-select" id="tab-pane-4-prefix">
+                      <option selected value=''>随机</option>
+                      <option>全</option>
+                      <option>总</option>
+                      <option>真</option>
+                      <option>秘</option>
+                      <option>宝</option>
+                      <option>玄</option>
+                      <option>仙</option>
+                      <option>魔</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">后缀</button>
+                    <select class="form-select" id="tab-pane-4-postfix">
+                      <option selected value=''>随机</option>
+                      <option>残页</option>
+                      <option>残卷</option>
+                      <option>残本</option>
+                      <option>抄本</option>
+                      <option>过录本</option>
+                      <option>拓本</option>
+                      <option>摹本</option>
+                    </select>
                   </div>
-
-                  <div class="col-lg-2 col-md-6 col-12 mb-4 mb-lg-3">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Online Music</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-music rounded-pill ms-auto">45</span>
-                        </div>
-
-                        <img src="images/topics/undraw_happy_music_g6wc.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetBook()">生成</button>
                   </div>
+                </div>
 
-                  <div class="col-lg-2 col-md-6 col-12">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Podcast</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-music rounded-pill ms-auto">20</span>
-                        </div>
-
-                        <img src="images/topics/undraw_Podcast_audience_re_4i5q.png"
-                          class="custom-block-image img-fluid" alt="">
-                      </a>
-                    </div>
-                  </div>
+                <div class="row" id="tab-pane-content-4">
                 </div>
               </div>
 
-              <div class="tab-pane fade" id="education-tab-pane" role="tabpanel" aria-labelledby="education-tab"
+              <div class="tab-pane fade" id="tab-pane-5" role="tabpanel" aria-labelledby="tab-5" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-5-category">
+                      <option selected value=''>随机</option>
+                      <option value="plant">草木</option>
+                      <option value="worm">赢虫</option>
+                      <option value="fish">鱼</option>
+                      <option value="beast">兽</option>
+                      <option value="bird">鸟</option>
+                      <option value="reptile">爬虫</option>
+                      <option value="insect">甲虫</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">等级</button>
+                    <select class="form-select" id="tab-pane-5-rarity">
+                      <option selected value=''>随机</option>
+                      <option value="common">凡品</option>
+                      <option value="uncommon">良品</option>
+                      <option value="rare">上品</option>
+                      <option value="epic">极品</option>
+                      <option value="legendary">秘宝</option>
+                      <option value="mythic">灵宝</option>
+                      <option value="exotic">古宝</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetCreature()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-5">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-6" role="tabpanel" aria-labelledby="tab-6" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-6-kind">
+                      <option selected value=''>随机</option>
+                      <option>金</option>
+                      <option>银</option>
+                      <option>铜</option>
+                      <option>铁</option>
+                      <option>玉</option>
+                      <option>晶</option>
+                      <option>钻</option>
+                      <option>砂</option>
+                      <option>石</option>
+                      <option>岩</option>
+                      <option>泥</option>
+                      <option>水</option>
+                      <option>液</option>
+                      <option>露</option>
+                      <option>胶</option>
+                      <option>浆</option>
+                      <option>木</option>
+                      <option>树</option>
+                      <option>树皮</option>
+                      <option>树根</option>
+                      <option>草</option>
+                      <option>苔</option>
+                      <option>竹</option>
+                      <option>参</option>
+                      <option>芝</option>
+                      <option>花</option>
+                      <option>丝</option>
+                      <option>藤</option>
+                      <option>叶</option>
+                      <option>碳</option>
+                      <option>漆</option>
+                      <option>汁</option>
+                      <option>果</option>
+                      <option>果核</option>
+                      <option>果壳</option>
+                      <option>水晶</option>
+                      <option>珊瑚</option>
+                      <option>玛瑙</option>
+                      <option>曜石</option>
+                      <option>玳瑁</option>
+                      <option>琥珀</option>
+                      <option>珍珠</option>
+                      <option>骨</option>
+                      <option>牙</option>
+                      <option>齿</option>
+                      <option>髓</option>
+                      <option>目</option>
+                      <option>眼</option>
+                      <option>睛</option>
+                      <option>眼珠</option>
+                      <option>尾</option>
+                      <option>鳞</option>
+                      <option>鳍</option>
+                      <option>蹄</option>
+                      <option>须</option>
+                      <option>毛</option>
+                      <option>皮</option>
+                      <option>角</option>
+                      <option>爪</option>
+                      <option>翅</option>
+                      <option>羽</option>
+                      <option>火</option>
+                      <option>炎</option>
+                      <option>焰</option>
+                      <option>雷</option>
+                      <option>电</option>
+                      <option>冰</option>
+                      <option>精</option>
+                      <option>魂</option>
+                      <option>魄</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">等级</button>
+                    <select class="form-select" id="tab-pane-6-rarity">
+                      <option selected value=''>随机</option>
+                      <option value="common">凡品</option>
+                      <option value="uncommon">良品</option>
+                      <option value="rare">上品</option>
+                      <option value="epic">极品</option>
+                      <option value="legendary">秘宝</option>
+                      <option value="mythic">灵宝</option>
+                      <option value="exotic">古宝</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">后缀</button>
+                    <select class="form-select" id="tab-pane-6-postfix">
+                      <option selected value=''>随机</option>
+                      <option>破损</option>
+                      <option>污损</option>
+                      <option>残破</option>
+                      <option>缺损</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetMaterial()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-6">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-7" role="tabpanel" aria-labelledby="tab-7" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-7-kind">
+                      <option selected value=''>随机</option>
+                      <option>丹</option>
+                      <option>丸</option>
+                      <option>散</option>
+                      <option>药</option>
+                      <option>剂</option>
+                      <option>汤</option>
+                      <option>饮</option>
+                      <option>茶</option>
+                      <option>酒</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetAlchemy()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-7">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-8" role="tabpanel" aria-labelledby="tab-8" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-8-kind">
+                      <option selected value=''>随机</option>
+                      <option>刀</option>
+                      <option>剑</option>
+                      <option>枪</option>
+                      <option>棍</option>
+                      <option>弓</option>
+                      <option>矛</option>
+                      <option>斧</option>
+                      <option>锤</option>
+                      <option>弩</option>
+                      <option>鞭</option>
+                      <option>戟</option>
+                      <option>戈</option>
+                      <option>环</option>
+                      <option>钩</option>
+                      <option>刺</option>
+                      <option>爪</option>
+                      <option>针</option>
+                      <option>钉</option>
+                      <option>镖</option>
+                      <option>盾</option>
+                      <option>衣</option>
+                      <option>甲</option>
+                      <option>索</option>
+                      <option>链</option>
+                      <option>网</option>
+                      <option>锁</option>
+                      <option>扇</option>
+                      <option>罩</option>
+                      <option>伞</option>
+                      <option>鼓</option>
+                      <option>琴</option>
+                      <option>骰</option>
+                      <option>袋</option>
+                      <option>钟</option>
+                      <option>梭</option>
+                      <option>牌</option>
+                      <option>盘</option>
+                      <option>印</option>
+                      <option>玺</option>
+                      <option>葫芦</option>
+                      <option>旗</option>
+                      <option>尺</option>
+                      <option>珠</option>
+                      <option>绫</option>
+                      <option>镯</option>
+                      <option>戒</option>
+                      <option>简</option>
+                      <option>铃</option>
+                      <option>镜</option>
+                      <option>瓶</option>
+                      <option>图</option>
+                      <option>轮</option>
+                      <option>幡</option>
+                      <option>碑</option>
+                      <option>鼎</option>
+                      <option>塔</option>
+                      <option>亭</option>
+                      <option>舟</option>
+                      <option>车</option>
+                      <option>目</option>
+                      <option>眼</option>
+                      <option>睛</option>
+                      <option>牙</option>
+                      <option>角</option>
+                      <option>爪</option>
+                      <option>鳞</option>
+                      <option>翅</option>
+                      <option>羽</option>
+                      <option>雷</option>
+                      <option>电</option>
+                      <option>火</option>
+                      <option>炎</option>
+                      <option>焰</option>
+                      <option>山</option>
+                      <option>峰</option>
+                      <option>石</option>
+                      <option>晶</option>
+                      <option>砂</option>
+                      <option>冰</option>
+                      <option>水</option>
+                      <option>魂</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">等级</button>
+                    <select class="form-select" id="tab-pane-8-rarity">
+                      <option selected value=''>随机</option>
+                      <option value="common">凡品</option>
+                      <option value="uncommon">良品</option>
+                      <option value="rare">上品</option>
+                      <option value="epic">极品</option>
+                      <option value="legendary">秘宝</option>
+                      <option value="mythic">灵宝</option>
+                      <option value="exotic">古宝</option>
+                    </select>
+
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">后缀</button>
+                    <select class="form-select" id="tab-pane-8-postfix">
+                      <option selected value=''>随机</option>
+                      <option>未完成</option>
+                      <option>次品</option>
+                      <option>破损</option>
+                      <option>仿制品</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetTalisman()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-8">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-9" role="tabpanel" aria-labelledby="tab-9" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-9-kind">
+                      <option selected value=''>随机</option>
+                      <option>门</option>
+                      <option>宗</option>
+                      <option>派</option>
+                      <option>教</option>
+                      <option>帮</option>
+                      <option>盟</option>
+                      <option>会</option>
+                      <option>社</option>
+                      <option>党</option>
+                      <option>阁</option>
+                      <option>刹</option>
+                      <option>庙</option>
+                      <option>庵</option>
+                      <option>楼</option>
+                      <option>房</option>
+                      <option>观</option>
+                      <option>宫</option>
+                      <option>寺</option>
+                      <option>府</option>
+                      <option>院</option>
+                      <option>堂</option>
+                      <option>坞</option>
+                      <option>坊</option>
+                      <option>轩</option>
+                      <option>苑</option>
+                      <option>斋</option>
+                      <option>殿</option>
+                      <option>城</option>
+                      <option>堡</option>
+                      <option>村</option>
+                      <option>庄</option>
+                      <option>寨</option>
+                      <option>山</option>
+                      <option>峰</option>
+                      <option>崖</option>
+                      <option>谷</option>
+                      <option>洞</option>
+                      <option>岛</option>
+                      <option>塔</option>
+                      <option>狱</option>
+                      <option>旗</option>
+                      <option>道</option>
+                      <option>世家</option>
+                      <option>山庄</option>
+                      <option>书院</option>
+                      <option>客栈</option>
+                      <option>剑派</option>
+                      <option>神教</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetClan()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-9">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-10" role="tabpanel" aria-labelledby="tab-10" tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-10-kind">
+                      <option selected value=''>随机</option>
+                      <option>国</option>
+                      <option>族</option>
+                      <option>部落</option>
+                      <option>联盟</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetNation()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-10">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-11" role="tabpanel" aria-labelledby="tab-11"
                 tabindex="0">
                 <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Graduation</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-education rounded-pill ms-auto">80</span>
-                        </div>
-
-                        <img src="images/topics/undraw_Graduation_re_gthn.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-11-kind">
+                      <option selected value=''>随机</option>
+                      <option>州</option>
+                      <option>县</option>
+                      <option>市</option>
+                      <option>郡</option>
+                      <option>乡</option>
+                      <option>道</option>
+                      <option>府</option>
+                      <option>城</option>
+                      <option>堡</option>
+                      <option>镇</option>
+                      <option>村</option>
+                      <option>庄</option>
+                      <option>驿</option>
+                      <option>营</option>
+                      <option>寨</option>
+                      <option>山</option>
+                      <option>峰</option>
+                      <option>岭</option>
+                      <option>坪</option>
+                      <option>崖</option>
+                      <option>谷</option>
+                      <option>岗</option>
+                      <option>洞</option>
+                      <option>川</option>
+                      <option>坡</option>
+                      <option>观</option>
+                      <option>寺</option>
+                      <option>宫</option>
+                      <option>原</option>
+                      <option>岛</option>
+                      <option>屿</option>
+                      <option>渚</option>
+                      <option>汀</option>
+                      <option>湾</option>
+                      <option>港</option>
+                      <option>渡</option>
+                      <option>津</option>
+                      <option>坞</option>
+                      <option>关</option>
+                      <option>林</option>
+                      <option>湖</option>
+                      <option>潭</option>
+                      <option>池</option>
+                      <option>泊</option>
+                      <option>泽</option>
+                      <option>河</option>
+                      <option>海</option>
+                      <option>江</option>
+                      <option>水</option>
+                    </select>
                   </div>
-
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <div class="custom-block bg-white shadow-lg text-center">
-                      <a href="topics-detail.html">
-                        <div class="d-flex">
-                          <div>
-                            <h5 class="mb-2">Educator</h5>
-
-                            <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
-                          </div>
-
-                          <span class="badge bg-education rounded-pill ms-auto">75</span>
-                        </div>
-
-                        <img src="images/topics/undraw_Educator_re_ju47.png" class="custom-block-image img-fluid"
-                          alt="">
-                      </a>
-                    </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetLocation()">生成</button>
                   </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-11">
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab-pane-12" role="tabpanel" aria-labelledby="tab-12"
+                tabindex="0">
+                <div class="row">
+                  <div class="input-group mb-4 col">
+                    <button class="btn btn-secondary" type="button" disabled aria-expanded="false">类别</button>
+                    <select class="form-select" id="tab-pane-12-kind">
+                      <option selected value=''>随机</option>
+                      <option>洲</option>
+                      <option>大陆</option>
+                      <option>海</option>
+                      <option>洋</option>
+                      <option>域</option>
+                      <option>境</option>
+                      <option>天</option>
+                      <option>界</option>
+                    </select>
+                  </div>
+                  <div class="col-auto mb-4 col">
+                    <button type="button" class="btn btn-secondary" onclick="buttonGetZone()">生成</button>
+                  </div>
+                </div>
+
+                <div class="row" id="tab-pane-content-12">
                 </div>
               </div>
             </div>
-
           </div>
         </div>
     </section>
@@ -459,7 +963,7 @@
   <script src="data/talisman/talisman.js"></script>
 
   <script src="js/random_fantasy.js"></script>
-  <script src="js/test.js"></script>
+  <script src="js/content.js"></script>
 
 </body>
 

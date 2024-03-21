@@ -120,12 +120,14 @@ function getName(number, options) {
       theFamilyName = family[familyIndex];
     }
     let f = options?.isFemale ?? Math.floor(Math.random() * 10) % 2 == 0;
+
     let namesOfASex = f ? female : male;
     let r = Math.random();
     let s = options?.style;
     if (!s) {
       s = r < 0.33333333 ? 'single' : r < 0.66666666 ? 'double' : 'combine';
     }
+
     let name = '';
     if (s == 'single') {
       if (options?.middleCharacter) {
@@ -174,10 +176,8 @@ function getDao(number, options) {
     }
     let nameIndex2 = Math.floor(Math.random() * dao.length);
     let name = theFirstCharacter + dao[nameIndex2];
-    let titleGroup =
-      options?.isFemale ?? Math.floor(Math.random() * 10) % 2 == 0
-        ? daoTitleFemale
-        : daoTitleMale;
+    let titleGroupRandom = options?.isFemale ?? Math.floor(Math.random() * 10) % 2 == 0
+    let titleGroup = titleGroupRandom ? daoTitleFemale : daoTitleMale;
     let t = options?.title || '';
     let rarity = 'common';
     if (!t) {
@@ -185,17 +185,17 @@ function getDao(number, options) {
       if (rarity == 'exotic') {
         t =
           titleGroup.exotic[
-            Math.floor(Math.random() * titleGroup.exotic.length)
+          Math.floor(Math.random() * titleGroup.exotic.length)
           ];
       } else if (rarity == 'mythic') {
         t =
           titleGroup.mythic[
-            Math.floor(Math.random() * titleGroup.mythic.length)
+          Math.floor(Math.random() * titleGroup.mythic.length)
           ];
       } else if (rarity == 'legendary') {
         t =
           titleGroup.legendary[
-            Math.floor(Math.random() * titleGroup.legendary.length)
+          Math.floor(Math.random() * titleGroup.legendary.length)
           ];
       } else if (rarity == 'epic') {
         t = titleGroup.epic[Math.floor(Math.random() * titleGroup.epic.length)];
@@ -204,7 +204,7 @@ function getDao(number, options) {
       } else if (rarity == 'uncommon') {
         t =
           titleGroup.uncommon[
-            Math.floor(Math.random() * titleGroup.uncommon.length)
+          Math.floor(Math.random() * titleGroup.uncommon.length)
           ];
       }
     } else {
@@ -313,17 +313,17 @@ function getBook(number, options) {
       if (rarity == 'exotic') {
         pre =
           bookPrefix.exotic[
-            Math.floor(Math.random() * bookPrefix.exotic.length)
+          Math.floor(Math.random() * bookPrefix.exotic.length)
           ];
       } else if (rarity == 'mythic') {
         pre =
           bookPrefix.mythic[
-            Math.floor(Math.random() * bookPrefix.mythic.length)
+          Math.floor(Math.random() * bookPrefix.mythic.length)
           ];
       } else if (rarity == 'legendary') {
         pre =
           bookPrefix.legendary[
-            Math.floor(Math.random() * bookPrefix.legendary.length)
+          Math.floor(Math.random() * bookPrefix.legendary.length)
           ];
       } else if (rarity == 'epic') {
         pre =
@@ -342,14 +342,14 @@ function getBook(number, options) {
         post =
           _kParenthesisLeft +
           bookPostfix.rare[
-            Math.floor(Math.random() * bookPostfix.rare.length)
+          Math.floor(Math.random() * bookPostfix.rare.length)
           ] +
           _kParenthesisRight;
       } else if (r1 < rarityValues.uncommon && r2 < rarityValues.uncommon) {
         post =
           _kParenthesisLeft +
           bookPostfix.uncommon[
-            Math.floor(Math.random() * bookPostfix.uncommon.length)
+          Math.floor(Math.random() * bookPostfix.uncommon.length)
           ] +
           _kParenthesisRight;
       }
@@ -379,21 +379,24 @@ function getCreature(number, options) {
     let name = '';
     let pre =
       commonCreatureNames[
-        Math.floor(Math.random() * commonCreatureNames.length)
+      Math.floor(Math.random() * commonCreatureNames.length)
       ];
     let c = colorPrefix[Math.floor(Math.random() * colorPrefix.length)];
     let s = creaturePrefix[Math.floor(Math.random() * creaturePrefix.length)];
     let cat = options?.category;
     let k = '';
+
     if (!cat) {
       cat =
         creatureCategory[Math.floor(Math.random() * creatureCategory.length)];
     }
     k = creature[cat][Math.floor(Math.random() * creature[cat].length)];
     let r = options?.rarity || _getRarity(rarityValues.uncommon).rarity;
+
     if (r == 'exotic') {
       name =
         strangeCreature[Math.floor(Math.random() * strangeCreature.length)];
+      console.log(111111)
     } else if (r == 'mythic') {
       name = pre + c + s + k;
     } else if (r == 'legendary') {
@@ -491,14 +494,14 @@ function getMaterial(number, options) {
         post =
           _kParenthesisLeft +
           materialPostfix.broken[
-            Math.floor(Math.random() * materialPostfix.broken.length)
+          Math.floor(Math.random() * materialPostfix.broken.length)
           ] +
           _kParenthesisRight;
       } else if (r1 < rarityValues.uncommon && r2 < rarityValues.uncommon) {
         post =
           _kParenthesisLeft +
           materialPostfix.handmade[
-            Math.floor(Math.random() * materialPostfix.handmade.length)
+          Math.floor(Math.random() * materialPostfix.handmade.length)
           ] +
           _kParenthesisRight;
       }
@@ -591,14 +594,14 @@ function getTalisman(number, options) {
         post =
           _kParenthesisLeft +
           talismanPostfix.broken[
-            Math.floor(Math.random() * talismanPostfix.broken.length)
+          Math.floor(Math.random() * talismanPostfix.broken.length)
           ] +
           _kParenthesisRight;
       } else if (r1 < rarityValues.uncommon && r2 < rarityValues.uncommon) {
         post =
           _kParenthesisLeft +
           talismanPostfix.handmade[
-            Math.floor(Math.random() * talismanPostfix.handmade.length)
+          Math.floor(Math.random() * talismanPostfix.handmade.length)
           ] +
           _kParenthesisRight;
       }
